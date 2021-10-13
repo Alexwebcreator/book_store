@@ -13,6 +13,13 @@ body {
   margin: auto;
 }
 
+.button {
+  color: #1565D8;
+  border: 3px solid #1565D8;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -381,16 +388,50 @@ template {
 }
 
 .navbar-menu__button {
-  color: #1565D8;
-  border: 3px solid #1565D8;
   padding: 13px 28px;
-  border-radius: 8px;
   margin-left: 45px;
   margin-right: 0;
 }
 
 .navbar__mobile-button {
   display: none;
+}
+
+.main-book {
+  display: flex;
+  justify-content: space-between;
+  height: 580px;
+  margin-top: 69px;
+  margin-bottom: 100px;
+}
+
+.main-book__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 478px;
+  margin-top: 52px;
+  margin-bottom: 51px;
+}
+
+.main-book__name {
+  max-width: 443px;
+  color: #183B56;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.main-book__naming {
+  color: #FAAD13;
+}
+
+.main-book__wrapper {
+  width: 488px;
+  height: 580px;
+  padding: auto;
 }
 
 @media (max-width: 1200px) {
