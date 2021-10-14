@@ -15,7 +15,7 @@ body {
 
 .button {
   color: #1565D8;
-  border: 3px solid #1565D8;
+  border: 2px solid #1565D8;
   border-radius: 8px;
   font-weight: bold;
 }
@@ -388,13 +388,17 @@ template {
 }
 
 .navbar-menu__button {
-  padding: 13px 28px;
+  padding: 13px 31px;
   margin-left: 45px;
-  margin-right: 0;
+  margin-right: 3px;
 }
 
 .navbar__mobile-button {
   display: none;
+}
+
+.logo {
+  margin-left: -3px;
 }
 
 .main-book {
@@ -409,9 +413,9 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 478px;
-  margin-top: 52px;
-  margin-bottom: 51px;
+  flex-basis: 585px;
+  margin-top: 13px;
+  margin-bottom: 55px;
 }
 
 .main-book__name {
@@ -424,14 +428,54 @@ template {
   line-height: 60px;
 }
 
+.main-book__author {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #183B56;
+  margin-top: -3px;
+}
+
+.main-book__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 36px;
+  margin-bottom: 56px;
+}
+
 .main-book__naming {
   color: #FAAD13;
+}
+
+.main-book__button--buy {
+  padding: 18px 35px 18px 35px;
+  background-color: #1565D8;
+  color: #fff;
+}
+
+.main-book__button--read {
+  padding: 15px 49px 14px 49px;
+  margin-left: 21px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .main-book__wrapper {
   width: 488px;
   height: 580px;
-  padding: auto;
+  background-color: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-book__img {
+  width: 250px;
+  height: 374px;
 }
 
 @media (max-width: 1200px) {

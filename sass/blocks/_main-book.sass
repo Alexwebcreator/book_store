@@ -8,9 +8,9 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-    flex-basis: 478px
-    margin-top: 52px
-    margin-bottom: 51px
+    flex-basis: 585px
+    margin-top: 13px
+    margin-bottom: 55px
   &__name
     max-width: 443px
     color: $heading
@@ -19,9 +19,40 @@
     font-weight: bold
     font-size: 48px
     line-height: 60px
+  &__author
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    color: $heading
+    margin-top: -3px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    margin-top: 36px
+    margin-bottom: 56px
   &__naming
     color: #FAAD13
+  &__button
+    &--buy
+      padding: 18px 35px 18px 35px
+      background-color: $buttons
+      color: #fff
+    &--read
+      padding: 15px 49px 14px 49px
+      margin-left: 21px
+      font-size: 18px
+      line-height: 25px
   &__wrapper
     width: 488px
     height: 580px
-    padding: auto
+    background-color: $book-bgc
+    display: flex
+    align-items: center
+    justify-content: center
+  &__img
+    width: 250px
+    height: 374px
