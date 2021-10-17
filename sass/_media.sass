@@ -1,13 +1,52 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .main-book
+    &__description
+      flex-basis: 420px
+      margin-top: 0
+    &__name
+      margin-top: 0
+      line-height: 50px
+      font-size: 40px
+    &__text
+      margin-bottom: 45px
+    &__keys
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__button
+      padding-left: 50px
+      padding-right: 50px
+      margin: 0
+      max-width: 250px
+      &--read
+        margin-top: 24px
 @media (max-width: 992px)
-  .container,
+  .container
     max-width: 700px
+  .main-book
+    &__description
+      flex-basis: 330px
+    &__name
+      line-height: 45px
+      font-size: 35px
+    &__author
+      font-size: 16px
+      line-height: 20px
+    &__text
+      font-size: 16px
+      line-height: 24px
+    &__wrapper
+      width: 330px
+      height: 450px
+      margin-top: 50px
 @media (max-width: 767px)
-  .container,
+  .container
     max-width: 576px
     width: 92%
+  .logo
+    margin-left: -1px
   .navbar
     &-menu
       &__hidden
@@ -15,9 +54,11 @@
   .menu
     &-button
       display: flex
-      width: 16px
-      height: 11px
+      width: 22px
+      height: 18px
       padding: 0
+      margin-right: 5px
+      margin-bottom: 6px
       align-items: center
       justify-content: space-between
       flex-direction: column
@@ -25,9 +66,68 @@
       background-color: #fff
       cursor: pointer
       &__line
-        width: 16px
-        height: 1px
+        width: 22px
+        height: 2px
         background-color: $text-color
+  .main-book
+    flex-direction: column
+    margin-top: 20px
+    &__description
+      flex-basis: 90%
+    &__name
+      margin-bottom: 40px
+      text-align: center
+      margin-top: 10px
+    &__author
+      text-align: center
+    &__text
+      line-height: 30px
+      text-align: center
+    &__keys
+      flex-direction: row
+      justify-content: space-between
+    &__button
+      &--read
+        margin-top: 0
+    &__wrapper
+      width: 100%
+    &__img
+      margin-top: 50px
+      margin-bottom: 50px
 @media (max-width: 576px)
   .container
     width: 88%
+  .navbar
+    &-wrapper
+      margin-top: 0
+      height: 70px
+  .main-book
+    &__description
+      margin-bottom: 35px
+    &__name
+      font-size: 32px
+      line-height: 40px
+      margin-bottom: 25px
+    &__author
+      font-size: 16px
+      line-height: 24px
+    &__text
+      font-size: 16px
+      line-height: 23px
+      margin-bottom: 19px
+    &__keys
+      flex-direction: column
+    &__button
+      min-width: 176px
+      font-size: 16px
+      line-height: 22px
+      padding: 8px 20px
+      &--read
+        margin-top: 12px
+    &__wrapper
+      margin-top: 0
+    &__img
+      width: 144px
+      height: 215px
+      margin-top: 60px
+      margin-bottom: 60px

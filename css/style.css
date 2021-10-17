@@ -18,6 +18,7 @@ body {
   border: 2px solid #1565D8;
   border-radius: 8px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -482,11 +483,57 @@ template {
   .container {
     max-width: 960px;
   }
+  .main-book__description {
+    flex-basis: 420px;
+    margin-top: 0;
+  }
+  .main-book__name {
+    margin-top: 0;
+    line-height: 50px;
+    font-size: 40px;
+  }
+  .main-book__text {
+    margin-bottom: 45px;
+  }
+  .main-book__keys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-book__button {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    max-width: 250px;
+  }
+  .main-book__button--read {
+    margin-top: 24px;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
+  }
+  .main-book__description {
+    flex-basis: 330px;
+  }
+  .main-book__name {
+    line-height: 45px;
+    font-size: 35px;
+  }
+  .main-book__author {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .main-book__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main-book__wrapper {
+    width: 330px;
+    height: 450px;
+    margin-top: 50px;
   }
 }
 
@@ -495,14 +542,19 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  .logo {
+    margin-left: -1px;
+  }
   .navbar-menu__hidden {
     display: none;
   }
   .menu-button {
     display: flex;
-    width: 16px;
-    height: 11px;
+    width: 22px;
+    height: 18px;
     padding: 0;
+    margin-right: 5px;
+    margin-bottom: 6px;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
@@ -511,15 +563,90 @@ template {
     cursor: pointer;
   }
   .menu-button__line {
-    width: 16px;
-    height: 1px;
+    width: 22px;
+    height: 2px;
     background-color: #5A7184;
+  }
+  .main-book {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .main-book__description {
+    flex-basis: 90%;
+  }
+  .main-book__name {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .main-book__author {
+    text-align: center;
+  }
+  .main-book__text {
+    line-height: 30px;
+    text-align: center;
+  }
+  .main-book__keys {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-book__button--read {
+    margin-top: 0;
+  }
+  .main-book__wrapper {
+    width: 100%;
+  }
+  .main-book__img {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
     width: 88%;
+  }
+  .navbar-wrapper {
+    margin-top: 0;
+    height: 70px;
+  }
+  .main-book__description {
+    margin-bottom: 35px;
+  }
+  .main-book__name {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  .main-book__author {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main-book__text {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 19px;
+  }
+  .main-book__keys {
+    flex-direction: column;
+  }
+  .main-book__button {
+    min-width: 176px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 20px;
+  }
+  .main-book__button--read {
+    margin-top: 12px;
+  }
+  .main-book__wrapper {
+    margin-top: 0;
+  }
+  .main-book__img {
+    width: 144px;
+    height: 215px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
