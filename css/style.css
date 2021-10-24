@@ -19,6 +19,7 @@ body {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  background: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -468,7 +469,7 @@ template {
 .main-book__wrapper {
   width: 488px;
   height: 580px;
-  background-color: #E5E5E5;
+  background-color: rgba(179, 186, 197, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,6 +478,188 @@ template {
 .main-book__img {
   width: 250px;
   height: 374px;
+}
+
+.reference-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.reference__book {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 751px;
+}
+
+.reference__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #183B56;
+  width: 100%;
+  margin-top: 0;
+}
+
+.reference__plate {
+  width: 358px;
+  height: 260px;
+  display: flex;
+  padding: 13px 13px 9px 9px;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.reference__plate--hidden {
+  padding-bottom: 7px;
+}
+
+.reference__img {
+  width: 160px;
+  height: 238px;
+  border-radius: 8px;
+}
+
+.reference__description {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+.reference__description--top {
+  padding-left: 5px;
+  padding-bottom: 6px;
+  padding-top: 12px;
+}
+
+.reference__subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #183B56;
+}
+
+.reference__genre {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+  margin-top: -6px;
+}
+
+.reference__price {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1565D8;
+}
+
+.reference__price--top {
+  margin-top: -7px;
+}
+
+.reference-buy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+.reference-buy__button {
+  color: #fff;
+  background-color: #183B56;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.reference-buy__like {
+  width: 18px;
+  height: 21px;
+  border: none;
+  background-color: #fff;
+  margin-left: 14px;
+  margin-bottom: 4px;
+}
+
+.reference__more {
+  width: 100%;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1565D8;
+  background: rgba(21, 101, 216, 0.1);
+  border: none;
+  padding-top: 25px;
+  padding-bottom: 27px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reference__top {
+  flex-basis: 360px;
+}
+
+.reference-top__books {
+  padding: 24px 24px 0 24px;
+  background-color: rgba(179, 186, 197, 0.1);
+  border-radius: 8px;
+}
+
+.reference-top__plate {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.reference-top__plate--last {
+  margin-bottom: 24px;
+}
+
+.reference-top__img {
+  width: 120px;
+  height: 177px;
+  border-radius: 6px;
+  margin-top: 2px;
+}
+
+.reference__best {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-top: 1px solid #ECEEF2;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1565D8;
+  cursor: pointer;
+  background-color: rgba(179, 186, 197, 0.1);
+  background: none;
 }
 
 @media (max-width: 1200px) {
