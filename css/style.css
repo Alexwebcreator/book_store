@@ -618,7 +618,7 @@ template {
   cursor: pointer;
 }
 
-.reference__top {
+.reference-top {
   flex-basis: 360px;
 }
 
@@ -738,7 +738,7 @@ template {
     width: 340px;
     padding-right: 0;
   }
-  .reference__top {
+  .reference-top {
     flex-basis: 340px;
   }
   .reference-top__books {
@@ -755,7 +755,7 @@ template {
   .logo {
     margin-left: -1px;
   }
-  .navbar-menu__hidden {
+  .navbar__hidden {
     display: none;
   }
   .menu-button {
@@ -824,7 +824,7 @@ template {
     flex-basis: 90%;
     padding-left: 15px;
   }
-  .reference__plate-mobile--hidden {
+  .reference__plate--mobile {
     display: none;
   }
   .reference__more {
@@ -834,7 +834,7 @@ template {
     align-items: center;
     width: 100%;
   }
-  .reference__top {
+  .reference-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -971,7 +971,7 @@ template {
     text-transform: none;
     padding: 14px 61px;
   }
-  .reference__top {
+  .reference-top {
     margin-top: 56px;
   }
   .reference-top__books {
