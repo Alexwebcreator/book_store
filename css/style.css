@@ -608,6 +608,7 @@ template {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #1565D8;
   background: rgba(21, 101, 216, 0.1);
   border: none;
@@ -692,6 +693,15 @@ template {
   .main-book__button--read {
     margin-top: 24px;
   }
+  .reference-wrapper {
+    justify-content: space-around;
+  }
+  .reference__plate--hidden {
+    display: none;
+  }
+  .reference__book {
+    flex-basis: 358px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -717,6 +727,23 @@ template {
     width: 330px;
     height: 450px;
     margin-top: 50px;
+  }
+  .reference-wrapper {
+    justify-content: space-between;
+  }
+  .reference__book {
+    flex-basis: 340px;
+  }
+  .reference__plate {
+    width: 340px;
+    padding-right: 0;
+  }
+  .reference__top {
+    flex-basis: 340px;
+  }
+  .reference-top__books {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -753,9 +780,11 @@ template {
   .main-book {
     flex-direction: column;
     margin-top: 20px;
+    height: 100%;
   }
   .main-book__description {
     flex-basis: 90%;
+    margin-bottom: 25px;
   }
   .main-book__name {
     margin-bottom: 40px;
@@ -783,6 +812,43 @@ template {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .reference-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .reference__book {
+    justify-content: center;
+    text-align: center;
+  }
+  .reference__plate {
+    flex-basis: 90%;
+    padding-left: 15px;
+  }
+  .reference__plate-mobile--hidden {
+    display: none;
+  }
+  .reference__more {
+    width: 90%;
+  }
+  .reference__description {
+    align-items: center;
+    width: 100%;
+  }
+  .reference__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .reference-top__books {
+    display: flex;
+    flex-direction: column;
+  }
+  .reference-top__plate {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -792,6 +858,9 @@ template {
   .navbar-wrapper {
     margin-top: 0;
     height: 70px;
+  }
+  .main-book {
+    margin-bottom: 58px;
   }
   .main-book__description {
     margin-bottom: 35px;
@@ -820,16 +889,105 @@ template {
     padding: 8px 20px;
   }
   .main-book__button--read {
-    margin-top: 12px;
+    margin-top: 13px;
   }
   .main-book__wrapper {
     margin-top: 0;
+    height: 332px;
   }
   .main-book__img {
     width: 144px;
     height: 215px;
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+  .reference__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .reference__plate {
+    flex-direction: column;
+    flex-basis: 100%;
+    height: 312px;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
+  .reference__img {
+    width: 95px;
+    height: 137px;
+    margin-top: -38px;
+  }
+  .reference__description {
+    height: 148px;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 19px;
+  }
+  .reference__description--top {
+    align-items: start;
+    margin-top: 4px;
+    height: 136px;
+  }
+  .reference__genre {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 3px;
+  }
+  .reference__price {
+    margin-top: 3px;
+  }
+  .reference__price--world {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -8px;
+    margin-left: -10px;
+  }
+  .reference__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-top: 1px;
+  }
+  .reference__subtitle--world {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .reference-buy {
+    margin-left: -5px;
+  }
+  .reference-buy__button {
+    margin-left: 5px;
+  }
+  .reference-buy__button--world {
+    padding: 7px 27px;
+    margin-left: 0px;
+  }
+  .reference__more {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: none;
+    padding: 14px 61px;
+  }
+  .reference__top {
+    margin-top: 56px;
+  }
+  .reference-top__books {
+    margin-top: 12px;
+    width: 100%;
+    min-width: 290px;
+  }
+  .reference-top__plate {
+    max-width: 229px;
+    text-align: left;
+    margin-bottom: 34px;
+  }
+  .reference-top__img {
+    margin-right: 14px;
+    width: 95px;
+    height: 142px;
   }
 }
 /*# sourceMappingURL=style.css.map */

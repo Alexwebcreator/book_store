@@ -22,6 +22,14 @@
       max-width: 250px
       &--read
         margin-top: 24px
+  .reference
+    &-wrapper
+      justify-content: space-around
+    &__plate
+      &--hidden
+        display: none
+    &__book
+      flex-basis: 358px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -41,6 +49,20 @@
       width: 330px
       height: 450px
       margin-top: 50px
+  .reference
+    &-wrapper
+      justify-content: space-between
+    &__book
+      flex-basis: 340px
+    &__plate
+      width: 340px
+      padding-right: 0
+    &__top
+      flex-basis: 340px
+    &-top
+      &__books
+        padding-right: 15px
+        padding-left: 15px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -72,8 +94,10 @@
   .main-book
     flex-direction: column
     margin-top: 20px
+    height: 100%
     &__description
       flex-basis: 90%
+      margin-bottom: 25px
     &__name
       margin-bottom: 40px
       text-align: center
@@ -94,6 +118,37 @@
     &__img
       margin-top: 50px
       margin-bottom: 50px
+  .reference
+    &-wrapper
+      flex-direction: column
+      justify-content: center
+    &__book
+      justify-content: center
+      text-align: center
+    &__plate
+      flex-basis: 90%
+      padding-left: 15px
+      &-mobile
+        &--hidden
+          display: none
+    &__more
+      width: 90%
+    &__description
+      align-items: center
+      width: 100%
+    &__top
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+      margin-top: 80px
+    &-top
+      &__books
+        display: flex
+        flex-direction: column
+      &__plate
+        justify-content: center
 @media (max-width: 576px)
   .container
     width: 88%
@@ -102,6 +157,7 @@
       margin-top: 0
       height: 70px
   .main-book
+    margin-bottom: 58px
     &__description
       margin-bottom: 35px
     &__name
@@ -123,11 +179,84 @@
       line-height: 22px
       padding: 8px 20px
       &--read
-        margin-top: 12px
+        margin-top: 13px
     &__wrapper
       margin-top: 0
+      height: 332px
     &__img
       width: 144px
       height: 215px
       margin-top: 60px
       margin-bottom: 60px
+  .reference
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__plate
+      flex-direction: column
+      flex-basis: 100%
+      height: 312px
+      align-items: center
+      margin-top: 48px
+      margin-bottom: 24px
+      padding-left: 0
+    &__img
+      width: 95px
+      height: 137px
+      margin-top: -38px
+    &__description
+      height: 148px
+      padding: 0
+      margin-left: 0
+      margin-top: 19px
+      &--top
+        align-items: start
+        margin-top: 4px
+        height: 136px
+    &__genre
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 3px
+    &__price
+      margin-top: 3px
+      &--world
+        font-size: 16px
+        line-height: 20px
+        margin-top: -8px
+        margin-left: -10px
+    &__subtitle
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: 0.2px
+      margin-top: 1px
+      &--world
+        font-size: 20px
+        line-height: 24px
+    &-buy
+      margin-left: -5px
+      &__button
+        margin-left: 5px
+        &--world
+          padding: 7px 27px
+          margin-left: 0px
+    &__more
+      width: 100%
+      font-size: 16px
+      line-height: 20px
+      text-transform: none
+      padding: 14px 61px
+    &__top
+      margin-top: 56px
+    &-top
+      &__books
+        margin-top: 12px
+        width: 100%
+        min-width: 290px
+      &__plate
+        max-width: 229px
+        text-align: left
+        margin-bottom: 34px
+      &__img
+        margin-right: 14px
+        width: 95px
+        height: 142px
