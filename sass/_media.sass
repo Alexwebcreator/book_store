@@ -53,6 +53,11 @@
           left: 30%
         &--next
           right: 30%
+  .unreleased
+    &-slider
+      &__book
+        &--last
+          display: none
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -94,6 +99,15 @@
       &__card
         flex-basis: 240px
         margin-bottom: 20px
+  .unreleased
+    height: 100%
+    &-slider
+      &__item
+        display: grid
+        grid-template-columns: 1fr 1fr
+        justify-items: center
+      &__book
+        margin-bottom: 50px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -309,7 +323,9 @@
       width: 93%
     &-slider
       margin-top: 57px
+      margin-bottom: 30px
       padding-top: 55px
+      height: 540px
       &__item
         display: grid
         grid-template-columns: 1fr 1fr
@@ -348,3 +364,34 @@
           left: 33%
         &--next
           right: 33%
+  .unreleased
+    padding-bottom: 7px
+    &-slider
+      flex-direction: column
+      &__title
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        margin-top: 48px
+        margin-bottom: 41px
+      &__button
+        width: 48px
+        height: 48px
+        background-size: 10px
+        margin-top: 0
+        &--prev
+          margin-right: 16px
+      &__book
+        margin-bottom: 40px
+        &--other
+          display: none
+      &__item
+        grid-template-columns: 1fr
+      &__wrapper
+        order: 2
+      &__keys
+        order: 3
+        max-height: 48px
+        margin-bottom: 43px

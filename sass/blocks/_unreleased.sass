@@ -1,0 +1,44 @@
+.unreleased
+  background-color: $heading
+  height: 548px
+  &-slider
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    &__item
+      display: flex
+      justify-content: space-between
+    &__book
+      width: 204px
+      height: 298px
+      border-radius: 8px
+      overflow: hidden
+      object-fit: cover
+    &__title
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      color: #fff
+    &__button
+      width: 56px
+      height: 56px
+      border: 2px solid $text-color
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 15px
+      background-color: $heading
+      color: $text-color
+      border-radius: 30px
+      margin-top: 58px
+      margin-bottom: 56px
+      &--prev
+        background-image: url(../img/white-prev.svg)
+        color: $text-color
+        margin-right: 18px
+      &--next
+        background-image: url(../img/white-next.svg)
+        color: $text-color

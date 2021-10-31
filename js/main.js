@@ -16,3 +16,21 @@ $(document).ready(function() {
     },
   });
 });
+$(document).ready(function() {
+  var unreleasedSlider = new Swiper('.unreleased-slider', {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.unreleased-slider__button--next',
+      prevEl: '.unreleased-slider__button--prev',
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+  });
+});
