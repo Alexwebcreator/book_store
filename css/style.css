@@ -903,6 +903,74 @@ template {
   min-width: 250px;
 }
 
+.publishers {
+  height: 380px;
+  background-color: #B3BAC5;
+}
+
+.publishers-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 47px 47px 47px;
+}
+
+.publishers__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin-top: 0;
+  margin-right: 7px;
+  margin-bottom: 55px;
+}
+
+.publishers__name {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+.publishers__brand--slack {
+  margin-top: -3px;
+  margin-left: -7px;
+  height: 32px;
+}
+
+.publishers__brand--netflix {
+  height: 25px;
+  margin-left: -5px;
+}
+
+.publishers__brand--fitbit {
+  height: 27px;
+  margin-left: 2px;
+}
+
+.publishers__brand--google {
+  margin-top: -3px;
+  margin-left: -6px;
+}
+
+.publishers__brand--airbnb {
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+.publishers__brand--uber {
+  margin-left: -10px;
+}
+
+.publishers__brand--slacks {
+  margin-left: -7px;
+}
+
 @media (max-width: 1420px) {
   .set-slider__button--prev {
     left: 2%;
