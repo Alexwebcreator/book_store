@@ -160,6 +160,21 @@
     &__subtitle
       font-size: 16px
       line-height: 23px
+  .publishers
+    height: 100%
+    &__title
+      text-align: center
+    &__name
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      justify-content: center
+      align-content: center
+      row-gap: 50px
+      margin-bottom: 30px
+      &--second
+        display: none
+    &__brand
+      margin: auto
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -528,7 +543,7 @@
     &-video
       max-width: 100%
       &__wrapper
-        margin-bottom: 43px
+        margin-bottom: 42px
         &--last
           display: none
       &__main
@@ -545,3 +560,23 @@
           height: 27px
       &__checkbox
         margin-top: 17px
+  .publishers
+    &-wrapper
+      padding-right: 0
+      padding-left: 0
+      padding-top: 36px
+      padding-bottom: 32px
+    &__title
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 30px
+      margin-right: 0
+    &__name
+      grid-template-columns: 1fr 1fr
+      row-gap: 20px
+      padding-left: 15px
+      padding-right: 15px
+    &__brand
+      width: 86px
+      &--slack
+        width: 98px
