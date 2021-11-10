@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans' sans-serif;
   color: #5A7184;
   background-color: #fff;
 }
@@ -423,7 +423,7 @@ template {
 .main-book__name {
   max-width: 443px;
   color: #183B56;
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed' sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -431,7 +431,7 @@ template {
 }
 
 .main-book__author {
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -451,6 +451,11 @@ template {
 
 .main-book__naming {
   color: #FAAD13;
+}
+
+.main-book__button {
+  font-family: Open Sans sans-serif;
+  font-style: normal;
 }
 
 .main-book__button--buy {
@@ -494,7 +499,7 @@ template {
 }
 
 .reference__title {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -540,7 +545,7 @@ template {
 }
 
 .reference__subtitle {
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -551,7 +556,7 @@ template {
 }
 
 .reference__genre {
-  font-family: Open Sans;
+  font-family: Open Sans sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -561,7 +566,7 @@ template {
 }
 
 .reference__price {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -585,7 +590,7 @@ template {
   border: none;
   padding: 7px 20px;
   border-radius: 20px;
-  font-family: Open Sans;
+  font-family: Open Sans sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -603,7 +608,7 @@ template {
 
 .reference__more {
   width: 100%;
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -652,7 +657,7 @@ template {
   border-left: none;
   border-bottom: none;
   border-top: 1px solid #ECEEF2;
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -700,7 +705,7 @@ template {
 .set-slider__title {
   margin-top: 0;
   margin-bottom: 12px;
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -709,7 +714,7 @@ template {
 }
 
 .set-slider__about {
-  font-family: Open Sans;
+  font-family: Open Sans sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -770,7 +775,7 @@ template {
 }
 
 .unreleased-slider__title {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -813,7 +818,7 @@ template {
 }
 
 .history__title {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -824,7 +829,7 @@ template {
 
 .history__text {
   width: 383px;
-  font-family: Open Sans;
+  font-family: Open Sans sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -892,7 +897,7 @@ template {
 }
 
 .history__subtitle {
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -917,7 +922,7 @@ template {
 }
 
 .publishers__title {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -979,7 +984,7 @@ template {
 }
 
 .blog__title {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -992,7 +997,7 @@ template {
   max-height: 44px;
   border-radius: 30px;
   align-items: center;
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1031,7 +1036,7 @@ template {
 }
 
 .blog-articles__read {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1042,6 +1047,7 @@ template {
 
 .blog__img {
   margin-right: 36px;
+  object-fit: cover;
 }
 
 .blog__img--main {
@@ -1053,7 +1059,7 @@ template {
 }
 
 .blog__subtitle {
-  font-family: Roboto Condensed;
+  font-family: Roboto Condensed sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1071,12 +1077,11 @@ template {
 
 .blog__subtitle--small {
   margin: 0;
-  font-stretch: condensed;
 }
 
 .blog__text {
   width: 536px;
-  font-family: Open Sans;
+  font-family: Open Sans sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1173,6 +1178,21 @@ template {
   }
   .history__subtitle {
     min-width: 150px;
+  }
+  .blog-articles__main {
+    width: 380px;
+  }
+  .blog__img--main {
+    width: 380px;
+  }
+  .blog__text {
+    width: 380px;
+    margin-left: 0;
+  }
+  .blog__subtitle--main {
+    margin-left: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1303,6 +1323,42 @@ template {
   }
   .publishers__brand {
     margin: auto;
+  }
+  .blog-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog__title {
+    margin-top: 70px;
+  }
+  .blog__button {
+    order: 3;
+    margin-top: 40px;
+    width: 80%;
+  }
+  .blog-articles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-articles__main {
+    width: 556px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-articles__small {
+    width: 556px;
+  }
+  .blog__subtitle--main {
+    margin-bottom: 40px;
+  }
+  .blog__img--main {
+    width: 556px;
+  }
+  .blog__text {
+    width: 556px;
+    text-align: center;
   }
 }
 
@@ -1481,6 +1537,40 @@ template {
     order: 3;
     margin-top: 6px;
   }
+  .blog-wrapper {
+    margin-bottom: 50px;
+  }
+  .blog__title {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 50px;
+  }
+  .blog-articles__main {
+    width: 100%;
+  }
+  .blog-articles__small {
+    width: 500px;
+  }
+  .blog__img {
+    border-radius: 5px;
+  }
+  .blog__img--main {
+    width: 500px;
+  }
+  .blog__img--small {
+    width: 190px;
+  }
+  .blog__text {
+    margin-top: 0;
+    width: 500px;
+  }
+  .blog__subtitle--main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1499,15 +1589,22 @@ template {
     margin-bottom: 35px;
   }
   .main-book__name {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 25px;
+    letter-spacing: 0.1px;
   }
   .main-book__author {
     font-size: 16px;
     line-height: 24px;
   }
   .main-book__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 19px;
@@ -1523,6 +1620,10 @@ template {
   }
   .main-book__button--read {
     margin-top: 13px;
+  }
+  .main-book__button--buy {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .main-book__wrapper {
     margin-top: 0;
@@ -1611,7 +1712,7 @@ template {
     font-size: 16px;
     line-height: 20px;
     text-transform: none;
-    padding: 14px 61px;
+    padding: 14px 60px;
   }
   .reference-top {
     margin-top: 56px;
@@ -1764,7 +1865,7 @@ template {
     max-width: 100%;
   }
   .history-video__wrapper {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
   .history-video__wrapper--last {
     display: none;
@@ -1809,6 +1910,97 @@ template {
   }
   .publishers__brand--slack {
     width: 98px;
+  }
+  .blog-wrapper {
+    margin-bottom: 48px;
+  }
+  .blog__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 56px;
+    margin-bottom: 48px;
+    letter-spacing: 0.2px;
+  }
+  .blog__img--main {
+    width: 100%;
+    max-height: 120px;
+  }
+  .blog__img--small {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+  }
+  .blog-articles {
+    width: 100%;
+    padding-left: 2px;
+  }
+  .blog-articles__main {
+    align-items: start;
+  }
+  .blog-articles__small {
+    width: 100%;
+  }
+  .blog-articles__description {
+    height: 93px;
+  }
+  .blog-articles__date {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .blog-articles__read {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.125px;
+  }
+  .blog-articles__item {
+    margin-bottom: 28px;
+  }
+  .blog__subtitle {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .blog__subtitle--main {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .blog__subtitle--small {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
+  .blog__text {
+    width: 100%;
+    text-align: start;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-bottom: 28px;
+  }
+  .blog__button {
+    margin-top: 8px;
+    width: auto;
+    padding-left: 47px;
+    padding-right: 47px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -74,6 +74,21 @@
         width: 230px
     &__subtitle
       min-width: 150px
+  .blog
+    &-articles
+      &__main
+        width: 380px
+    &__img
+      &--main
+        width: 380px
+    &__text
+      width: 380px
+      margin-left: 0
+    &__subtitle
+      &--main
+        margin-left: 0
+        margin-top: 60px
+        margin-bottom: 60px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -175,6 +190,36 @@
         display: none
     &__brand
       margin: auto
+  .blog
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-top: 70px
+    &__button
+      order: 3
+      margin-top: 40px
+      width: 80%
+    &-articles
+      flex-direction: column
+      align-items: center
+      &__main
+        width: 556px
+        margin-right: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__small
+        width: 556px
+    &__subtitle
+      &--main
+        margin-bottom: 40px
+    &__img
+      &--main
+        width: 556px
+    &__text
+      width: 556px
+      text-align: center
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -319,6 +364,34 @@
         height: 14px
         order: 3
         margin-top: 6px
+  .blog
+    &-wrapper
+      margin-bottom: 50px
+    &__title
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 42px
+      margin-top: 50px
+    &-articles
+      &__main
+        width: 100%
+      &__small
+        width: 500px
+    &__img
+      border-radius: 5px
+      &--main
+        width: 500px
+      &--small
+        width: 190px
+    &__text
+      margin-top: 0
+      width: 500px
+    &__subtitle
+      &--main
+        margin-top: 30px
+        margin-bottom: 30px
 @media (max-width: 576px)
   .container
     width: 89%
@@ -332,13 +405,20 @@
     &__description
       margin-bottom: 35px
     &__name
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
       font-size: 32px
       line-height: 40px
       margin-bottom: 25px
+      letter-spacing: 0.1px
     &__author
       font-size: 16px
       line-height: 24px
     &__text
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
       font-size: 16px
       line-height: 23px
       margin-bottom: 19px
@@ -351,6 +431,9 @@
       padding: 8px 20px
       &--read
         margin-top: 13px
+      &--buy
+        padding-left: 16px
+        padding-right: 16px
     &__wrapper
       margin-top: 0
       height: 332px
@@ -424,7 +507,7 @@
       font-size: 16px
       line-height: 20px
       text-transform: none
-      padding: 14px 61px
+      padding: 14px 60px
     &-top
       margin-top: 56px
       &__books
@@ -543,7 +626,7 @@
     &-video
       max-width: 100%
       &__wrapper
-        margin-bottom: 42px
+        margin-bottom: 40px
         &--last
           display: none
       &__main
@@ -580,3 +663,80 @@
       width: 86px
       &--slack
         width: 98px
+  .blog
+    &-wrapper
+      margin-bottom: 48px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-top: 56px
+      margin-bottom: 48px
+      letter-spacing: 0.2px
+    &__img
+      &--main
+        width: 100%
+        max-height: 120px
+      &--small
+        width: 90px
+        height: 90px
+        margin-right: 20px
+    &-articles
+      width: 100%
+      padding-left: 2px
+      &__main
+        align-items: start
+      &__small
+        width: 100%
+      &__description
+        height: 93px
+      &__date
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 20px
+      &__read
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 10px
+        line-height: 20px
+        letter-spacing: 0.125px
+      &__item
+        margin-bottom: 28px
+    &__subtitle
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      &--main
+        margin-top: 20px
+        margin-bottom: 10px
+      &--small
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.1px
+    &__text
+      width: 100%
+      text-align: start
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 24px
+      letter-spacing: 0.1px
+      margin-bottom: 28px
+    &__button
+      margin-top: 8px
+      width: auto
+      padding-left: 47px
+      padding-right: 47px
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 20px
