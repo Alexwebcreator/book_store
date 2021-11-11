@@ -383,16 +383,24 @@ template {
 
 .navbar-menu__link {
   text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #183B56;
+  letter-spacing: 0.1px;
 }
 
 .navbar-menu__button {
-  padding: 13px 31px;
+  padding: 12px 31px;
   margin-left: 45px;
   margin-right: 3px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .navbar__mobile-button {
@@ -401,6 +409,7 @@ template {
 
 .logo {
   margin-left: -3px;
+  margin-top: 2px;
 }
 
 .main-book {
@@ -423,24 +432,27 @@ template {
 .main-book__name {
   max-width: 443px;
   color: #183B56;
-  font-family: 'Roboto Condensed' sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
+  letter-spacing: 0.2px;
 }
 
 .main-book__author {
-  font-family: Roboto sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #183B56;
   margin-top: -3px;
+  letter-spacing: 0.2px;
 }
 
 .main-book__text {
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -454,12 +466,12 @@ template {
 }
 
 .main-book__button {
-  font-family: Open Sans sans-serif;
+  font-family: Open Sans;
   font-style: normal;
 }
 
 .main-book__button--buy {
-  padding: 18px 35px 18px 35px;
+  padding: 19px 35px 17px 35px;
   background-color: #1565D8;
   color: #fff;
 }
@@ -499,7 +511,7 @@ template {
 }
 
 .reference__title {
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -545,7 +557,7 @@ template {
 }
 
 .reference__subtitle {
-  font-family: Roboto sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -556,7 +568,7 @@ template {
 }
 
 .reference__genre {
-  font-family: Open Sans sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -566,8 +578,7 @@ template {
 }
 
 .reference__price {
-  font-family: Roboto Condensed sans-serif;
-  font-style: normal;
+  font-family: Roboto Condensed;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -590,7 +601,7 @@ template {
   border: none;
   padding: 7px 20px;
   border-radius: 20px;
-  font-family: Open Sans sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -608,7 +619,7 @@ template {
 
 .reference__more {
   width: 100%;
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -657,7 +668,7 @@ template {
   border-left: none;
   border-bottom: none;
   border-top: 1px solid #ECEEF2;
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -705,7 +716,7 @@ template {
 .set-slider__title {
   margin-top: 0;
   margin-bottom: 12px;
-  font-family: Roboto sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -714,7 +725,7 @@ template {
 }
 
 .set-slider__about {
-  font-family: Open Sans sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -775,11 +786,12 @@ template {
 }
 
 .unreleased-slider__title {
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
+  letter-spacing: 0.2px;
   color: #fff;
 }
 
@@ -818,18 +830,19 @@ template {
 }
 
 .history__title {
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
+  letter-spacing: 0.2px;
   color: #183B56;
   margin-top: 104px;
 }
 
 .history__text {
   width: 383px;
-  font-family: Open Sans sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -896,15 +909,24 @@ template {
   margin-top: 10px;
 }
 
+.history-video__author {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .history__subtitle {
-  font-family: Roboto sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 32px;
+  letter-spacing: 0.2px;
   margin-right: 0;
   margin-top: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   min-width: 250px;
 }
 
@@ -922,11 +944,12 @@ template {
 }
 
 .publishers__title {
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
+  letter-spacing: 0.2px;
   color: #fff;
   margin-top: 0;
   margin-right: 7px;
@@ -984,7 +1007,7 @@ template {
 }
 
 .blog__title {
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -993,16 +1016,16 @@ template {
 }
 
 .blog__button {
-  padding: 12px 54px;
+  padding: 10px 54px 13px 54px;
   max-height: 44px;
   border-radius: 30px;
   align-items: center;
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  margin-top: 109px;
+  margin-top: 108px;
 }
 
 .blog-articles {
@@ -1036,7 +1059,7 @@ template {
 }
 
 .blog-articles__read {
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1059,7 +1082,7 @@ template {
 }
 
 .blog__subtitle {
-  font-family: Roboto Condensed sans-serif;
+  font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1069,7 +1092,7 @@ template {
 }
 
 .blog__subtitle--main {
-  margin-top: 28px;
+  margin-top: 26px;
   margin-bottom: 16px;
   margin-left: 10px;
   letter-spacing: 0.2px;
@@ -1081,7 +1104,7 @@ template {
 
 .blog__text {
   width: 536px;
-  font-family: Open Sans sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1184,6 +1207,10 @@ template {
   }
   .blog__img--main {
     width: 380px;
+  }
+  .blog__img--small {
+    width: 230px;
+    border-radius: 8px;
   }
   .blog__text {
     width: 380px;
@@ -1399,6 +1426,7 @@ template {
   }
   .main-book__description {
     flex-basis: 90%;
+    align-items: center;
     margin-bottom: 25px;
   }
   .main-book__name {
@@ -1416,6 +1444,7 @@ template {
   .main-book__keys {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
   .main-book__button--read {
     margin-top: 0;
