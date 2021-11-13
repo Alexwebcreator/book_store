@@ -96,6 +96,13 @@
     &-wrapper
       padding-right: 40px
       padding-left: 40px
+  .footer
+    &-links
+      padding-right: 0
+      flex-wrap: wrap
+    &__list
+      &--main
+        width: 200px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -230,6 +237,15 @@
   .registration
     &-wrapper
       flex-direction: column
+      justify-content: center
+  .footer
+    &__list
+      &--main
+        text-align: center
+        width: 250px
+        order: 5
+        margin-top: 50px
+    &-links
       justify-content: center
 @media (max-width: 767px)
   .container
@@ -405,6 +421,25 @@
       &--main
         margin-top: 30px
         margin-bottom: 30px
+  .footer
+    &-links
+      display: grid
+      justify-items: center
+      grid-template-columns: 1fr 1fr
+      padding-top: 10px
+    &__list
+      width: 130px
+      margin-top: 60px
+      &--main
+        min-width: 263px
+        grid-column-start: 1
+        grid-column-end: 3
+    &__title
+      font-size: 16px
+      line-height: 22px
+    &__link
+      font-size: 14px
+      line-height: 20px
 @media (max-width: 576px)
   .container
     width: 89%
@@ -787,3 +822,28 @@
       right: 11px
       max-height: 42px
       width: 92%
+  .footer
+    &-wrapper
+      padding-bottom: 0px
+    &-links
+      padding-top: 9px
+      padding-bottom: 0
+    &__list
+      margin-top: 39px
+      height: 202px
+      &--main
+        margin-top: 9px
+    &__title
+      margin-bottom: 20px
+    &__copyright
+      display: none
+    &__item
+      margin-top: 15px
+    &__text
+      margin-top: 10px
+      margin-left: -7px
+      margin-bottom: 15px
+    &__logo
+      margin-left: 2px
+    &__networks
+      margin-left: 4px
