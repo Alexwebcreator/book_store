@@ -1168,7 +1168,7 @@ template {
 }
 
 .subscribe__input::placeholder {
-  color: #BDBDBD;
+  color: #959EAD;
 }
 
 .subscribe__button {
@@ -1300,6 +1300,10 @@ template {
     margin-left: 0;
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+  .registration-wrapper {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -1466,6 +1470,10 @@ template {
   .blog__text {
     width: 556px;
     text-align: center;
+  }
+  .registration-wrapper {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -2110,6 +2118,46 @@ template {
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
+  }
+  .registration__container {
+    width: 100%;
+  }
+  .registration-wrapper {
+    padding: 26px 24px 28px 24px;
+    height: 306px;
+    border-radius: 0;
+  }
+  .registration__title {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+  .subscribe {
+    height: 112px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .subscribe__input::placeholder {
+    top: 17px;
+  }
+  .subscribe__input {
+    padding-bottom: 58px;
+    padding-right: 20px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .subscribe__button {
+    top: 58px;
+    bottom: 12px;
+    right: 11px;
+    max-height: 42px;
+    width: 92%;
   }
 }
 /*# sourceMappingURL=style.css.map */
