@@ -33,4 +33,60 @@ $(document).ready(function() {
       pageUpDown: true,
     },
   });
+
+  var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
+  function openModal() {
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+  // Обработка форм
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Пожалуйста, укажите свое имя",
+          minlength: "Имя должно содержать не менее 2 букв",
+        },
+        email: {
+          required: "Нам нужен ваш email адрес чтобы связаться с вами",
+          email: "Ваш email адрес должен быть в формате name@domain.com"
+        },
+        phone: {
+          required: "Обязательно укажите номер телефона",
+          minlength: "Номер телефона должен содержать не менее 10 символов",
+        },
+      },
+    });
+  });
+  $(document).ready(function(){
+    $(".input--phone").mask("+7-(999)-999-99-99");
+  });
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '380',
+      width: '100%',
+      videoId: 'M7lc1UVf-VE',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
 });
