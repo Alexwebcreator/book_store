@@ -10,7 +10,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "Новое обращение Book Store";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
@@ -51,3 +51,6 @@ else {$result = "error";}
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
+
+// Отображение результата
+header('Location:index.html');

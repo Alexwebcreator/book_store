@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -57,7 +58,7 @@
           </p>
           <div class="main-book__keys">
             <button data-toggle="modal" data-href="#book-modal" class="button main-book__button main-book__button--buy">КУПИТЬ СЕЙЧАС</button>
-            <button class="button main-book__button main-book__button--read">ЧИТАТЬ ДЕМО</button>
+            <button class="button main-book__button main-book__button--read"><a href="#" class="main-book__link">ЧИТАТЬ ДЕМО</a></button>
           </div>
           <!-- /.main-book__buttons -->
         </div>
@@ -84,7 +85,7 @@
               <span class="reference__price reference__price--world">$25.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button reference-buy__button--world">Купить</button>
-                <button class="reference-buy__like"><img src="img/like.svg" alt="Like"></button>
+                <button data-toggle="like" data-href="#like-color" class="reference-buy__like"><a href="#" class="reference-buy__link changeable"><img src="img/like.svg" alt="Like" class="reference-buy__heart"></a></button>
               </div>
               <!-- /.reference-buy -->
             </div>
@@ -100,7 +101,7 @@
               <span class="reference__price">$28.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <button class="reference-buy__like"><img src="img/like.svg" alt="Like"></button>
+                <button data-toggle="like" class="reference-buy__like"><a href="#" class="reference-buy__link changeable"><img src="img/like.svg" alt="Like" class="reference-buy__heart"></a></button>
               </div>
               <!-- /.reference-buy -->
             </div>
@@ -116,7 +117,8 @@
               <span class="reference__price">$19.50</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <button class="reference-buy__like"><img src="img/like.svg" alt="Like"></button>
+                <button data-toggle="like" class="reference-buy__like"><a href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                      alt="Like" class="reference-buy__heart"></a></button>
               </div>
               <!-- /.reference-buy -->
             </div>
@@ -132,7 +134,8 @@
               <span class="reference__price">$20.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <button class="reference-buy__like"><img src="img/like.svg" alt="Like"></button>
+                <button data-toggle="like" class="reference-buy__like"><a href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                      alt="Like" class="reference-buy__heart"></a></button>
               </div>
               <!-- /.reference-buy -->
             </div>
@@ -148,7 +151,8 @@
               <span class="reference__price">$23.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <button class="reference-buy__like"><img src="img/like.svg" alt="Like"></button>
+                <button data-toggle="like" class="reference-buy__like"><a href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                      alt="Like" class="reference-buy__heart"></a></button>
               </div>
               <!-- /.reference-buy -->
             </div>
@@ -164,14 +168,15 @@
               <span class="reference__price">$23.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <button class="reference-buy__like"><img src="img/like.svg" alt="Like"></button>
+                <button data-toggle="like" class="reference-buy__like"><a href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                      alt="Like" class="reference-buy__heart"></a></button>
               </div>
               <!-- /.reference-buy -->
             </div>
             <!-- /.reference__description -->
           </div>
           <!-- /.reference__plate -->
-          <button class="reference__more">Больше рекомендаций</button>
+          <button class="reference__more"><a href="#" class="reference__link">Больше рекомендаций</a></button>
         </div>
         <!-- /.reference__book -->
         <div class="reference-top">
@@ -233,7 +238,7 @@
               <!-- /.reference__description -->
             </div>
             <!-- /.reference-top__plate -->
-            <button class="reference__best">ЛУЧШИЕ КНИГИ</button>
+            <button class="reference__best"><a href="#" class="reference__link">ЛУЧШИЕ КНИГИ</a></button>
           </div>
         </div>
         <!-- /.reference__top -->
@@ -246,6 +251,29 @@
     <div class="container set__container">
       <div class="swiper set-slider">
         <div class="swiper-wrapper">
+          <div class="swiper-slide set-slider__item">
+            <div class="set-slider__card">
+              <img src="img/bussines.svg" alt="Image: Desk" class="set-slider__img">
+              <h3 class="set-slider__title">Бизнес & Финансы</h3>
+              <span class="set-slider__about">Книги про мир бизнеса</span>
+            </div>
+            <div class="set-slider__card">
+              <img src="img/diamond.svg" alt="Image: Diamond" class="set-slider__img">
+              <h3 class="set-slider__title set-slider__title--will">Самомотивация</h3>
+              <span class="set-slider__about">Книги о мотивации</span>
+            </div>
+            <div class="set-slider__card">
+              <img src="img/book.svg" alt="Image: Book" class="set-slider__img">
+              <h3 class="set-slider__title">Романы Теленовеллы</h3>
+              <span class="set-slider__about">Книги с крутыми историями</span>
+            </div>
+            <div class="set-slider__card">
+              <img src="img/square.svg" alt="Image: Square" class="set-slider__img">
+              <h3 class="set-slider__title">Навыки будущего</h3>
+              <span class="set-slider__about">Книги для самоподготовки</span>
+            </div>
+          </div>
+          <!-- /.swiper-slide set-slider__item -->
           <div class="swiper-slide set-slider__item">
             <div class="set-slider__card">
               <img src="img/bussines.svg" alt="Image: Desk" class="set-slider__img">
@@ -319,6 +347,18 @@
             <div class="unreleased-slider__book unreleased-slider__book--last"><img src="img/clare.png" alt="Book: After the end" class="unreleased-slider__img"></div>
           </div>
           <div class="swiper-slide unreleased-slider__item">
+            <div class="unreleased-slider__book"><img src="img/modernism.png" alt="Book: Logo modernism"
+                class="unreleased-slider__img"></div>
+            <div class="unreleased-slider__book unreleased-slider__book--other"><img src="img/kelly.png" alt="Book: Kelly Harms"
+                class="unreleased-slider__img"></div>
+            <div class="unreleased-slider__book unreleased-slider__book--other"><img src="img/short.png"
+                alt="Book: Making short films" class="unreleased-slider__img"></div>
+            <div class="unreleased-slider__book unreleased-slider__book--other"><img src="img/web.png"
+                alt="Book: On web typography" class="unreleased-slider__img"></div>
+            <div class="unreleased-slider__book unreleased-slider__book--last"><img src="img/clare.png" alt="Book: After the end"
+                class="unreleased-slider__img"></div>
+          </div>
+          <div class="swiper-slide unreleased-slider__item">
             <div class="unreleased-slider__book unreleased-slider__book--last"><img src="img/clare.png" alt="Book: After the end" class="unreleased-slider__img"></div>
             <div class="unreleased-slider__book unreleased-slider__book--other"><img src="img/kelly.png" alt="Book: Kelly Harms" class="unreleased-slider__img"></div>
             <div class="unreleased-slider__book unreleased-slider__book--other"><img src="img/short.png" alt="Book: Making short films" class="unreleased-slider__img"></div>
@@ -340,15 +380,14 @@
         <p class="history__text">Это раздел авторского рассказа. Каждую неделю мы стараемся рассказать вам историю писателя. Расскажем всем о&nbsp;закулисье их книг.</p>
         <div class="history-video">
           <div class="history-video__main video" id="player">
-            <script src="https://www.youtube.com/iframe_api"></script>
-            <img src="img/video-main.png" alt="Img: Main video" class="history-video__photo">
-            <button class="history-video__btn  history-video__btn--main video__play"><img src="img/play-blue.svg" alt="Img: play-blue" class="history-video__play"></button>
+            <img src="img/video-main.png" alt="image: main-video" class="history-video__img">
+            <button class="history-video__btn history-video__btn--main"><a data-fancybox href="https://www.youtube.com/watch?v=MgneQZtHSM8" class="video__play"><img src="img/play-blue.svg" alt="Img: play-blue" class="history-video__play"></a></button>
           </div>
           <!-- /.history-video__main -->
           <div class="history-video__wrapper">
             <div class="history-video__small">
               <img src="img/video-second.png" alt="Img: Second video" class="history-video__img">
-              <button class="history-video__btn history-video__btn--small"><img src="img/play-white.svg" alt="Img: play-white" class="history-video__play history-video__play--white"></button>
+              <button class="history-video__btn history-video__btn--small"><a data-fancybox href="https://www.youtube.com/watch?v=_8T3SPb7eso" class="video__play"><img src="img/play-white.svg" alt="Img: play-white" class="history-video__play history-video__play--white"></a></button>
             </div>
             <h3 class="history__subtitle">Emelda Scandroot</h3>
             <img src="img/checkbox.svg" alt="Img: Checkbox" class="history-video__checkbox">
@@ -357,7 +396,10 @@
           <div class="history-video__wrapper">
             <div class="history-video__small">
               <img src="img/video-third.png" alt="Img: Third video" class="history-video__img">
-              <button class="history-video__btn history-video__btn--small"><img src="img/play-white.svg" alt="Img: play-white" class="history-video__play  history-video__play--white"></button>
+              <button class="history-video__btn history-video__btn--small"><a data-fancybox
+                href="https://www.youtube.com/watch?v=SRZWLdJFQbQ&t=55s" class="video__play"><img src="img/play-white.svg"
+                alt="Img: play-white" class="history-video__play history-video__play--white"></a>
+              </button>
             </div>
             <h3 class="history__subtitle">Mar Rueda</h3>
             <img src="img/checkbox.svg" alt="Img: Checkbox" class="history-video__checkbox">
@@ -366,7 +408,10 @@
           <div class="history-video__wrapper history-video__wrapper--last">
             <div class="history-video__small">
               <img src="img/video-fourth.png" alt="Img: Fourth video" class="history-video__img">
-              <button class="history-video__btn history-video__btn--small"><img src="img/play-white.svg" alt="Img: play-white" class="history-video__play"></button>
+              <button class="history-video__btn history-video__btn--small"><a data-fancybox
+                  href="https://www.youtube.com/watch?v=uOZrDR7BnzI" class="video__play"><img src="img/play-white.svg"
+                    alt="Img: play-white" class="history-video__play history-video__play--white"></a>
+              </button>
             </div>
             <h3 class="history__subtitle">Nembo Lukeni</h3>
             <img src="img/checkbox.svg" alt="Img: Checkbox" class="history-video__checkbox">
@@ -412,7 +457,7 @@
     <div class="container">
       <div class="blog-wrapper">
         <h2 class="blog__title">Ehya Блог</h2>
-        <button class="button blog__button">Все Блоги</button>
+        <button class="button blog__button"><a href="#" class="blog__link">Все Блоги</a></button>
         <div class="blog-articles">
           <div class="blog-articles__main">
             <img src="img/blog-main.png" alt="Image: Workdesk" class="blog__img blog__img--main">
@@ -489,10 +534,10 @@
             </a>
             <p class="footer__text">Создайте современный и креативный веб-сайт с&nbsp;crealand</p>
             <div class="footer__networks">
-              <a href="#" class="footer__social"><img src="img/g.svg" alt="Logo: Google" class="footer__img"></a>
-              <a href="#" class="footer__social"><img src="img/twitter.svg" alt="Logo: Twitter" class="footer__img"></a>
-              <a href="#" class="footer__social"><img src="img/instagram.svg" alt="Logo: Instagram" class="footer__img"></a>
-              <a href="#" class="footer__social"><img src="img/linkedin.svg" alt="Logo: Linkedin" class="footer__img"></a>
+              <a target="_blank" href="https://www.google.com/" class="footer__social"><img src="img/g.svg" alt="Logo: Google" class="footer__img"></a>
+              <a target="_blank" href="https://twitter.com/" class="footer__social"><img src="img/twitter.svg" alt="Logo: Twitter" class="footer__img"></a>
+              <a target="_blank" href="https://www.instagram.com/?hl=ru" class="footer__social"><img src="img/instagram.svg" alt="Logo: Instagram" class="footer__img"></a>
+              <a target="_blank" href="https://ru.linkedin.com/" class="footer__social"><img src="img/linkedin.svg" alt="Logo: Linkedin" class="footer__img"></a>
             </div>
             <!-- /.footer__networks -->
           </div>
@@ -572,7 +617,9 @@
   <!-- /.modal -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
