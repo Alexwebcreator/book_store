@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.set-slider__button--next',
-      prevEl: '.set-slider__button--prev',
+      nextEl: '.set__button--next',
+      prevEl: '.set__button--prev',
     },
 
     keyboard: {
