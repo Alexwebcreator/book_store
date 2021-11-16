@@ -77,28 +77,22 @@ $(document).ready(function() {
     $(".input--phone").mask("+7-(999)-999-99-99", { placeholder: "+7 (___) ___-__-__"});
   });
 
-  var likeButton = $("[data-toggle=like]");
-  likeButton.on("click", likeColor);
-  function likeColor() {
-    var colorChange = $(this).attr("data-href");
-    $(colorChange).find(".reference-buy__heart").addClass(".reference-buy__heart--red");
-  }
-
-  $('img.reference-buy__heart--red').each(function(){
-    var $img = $(this);
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
-      $.get(imgURL, function(data) {
-      var $svg = $(data).find('svg');
-      if(typeof imgClass !== 'undefined') {
-        $svg = $svg.attr('class', imgClass+' replaced-svg');
-      }
-      $svg = $svg.removeAttr('xmlns:a');
-      if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-      }
-      $img.replaceWith($svg);
-    }, 'xml');
+  $('.reference-buy__link').on('click', function() {
+    $('img.reference-buy__heart').each(function(){
+      var $img = $(this);
+      var imgClass = $img.attr('class');
+      var imgURL = $img.attr('src');
+        $.get(imgURL, function(data) {
+        var $svg = $(data).find('svg');
+        if(typeof imgClass !== 'undefined') {
+          $svg = $svg.attr('class', imgClass+' replaced-svg');
+        }
+        $svg = $svg.removeAttr('xmlns:a');
+        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+          $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+        }
+        $img.replaceWith($svg);
+      }, 'xml');
+    });
   });
-  
 });

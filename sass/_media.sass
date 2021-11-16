@@ -245,6 +245,10 @@
     &-wrapper
       flex-direction: column
       justify-content: center
+    &__title
+      width: 500px
+      margin-bottom: 15px
+      margin-top: 0
   .footer
     &__list
       &--main
@@ -525,6 +529,10 @@
       height: 215px
       margin-top: 60px
       margin-bottom: 60px
+    &__success
+      width: 280px
+      font-size: 18px
+      line-height: 24px
   .reference
     &-wrapper
     &__title
@@ -881,3 +889,108 @@
       margin-left: 2px
     &__networks
       margin-left: 4px
+@media (min-width: 992px)
+  .blog
+    &__button:hover
+      color: #FAAD13
+    &__button:active
+      background-color: #ecd6a9
+    &-articles
+      &__read:hover
+        text-decoration: underline
+      &__read:active
+        color: #fa0606
+  .footer
+    &__img:hover
+      background-color: #dfdfdf
+    &__img:active
+      background-color: #ecd6a9
+    &__link:hover
+      text-decoration: underline
+    &__link:active
+      color: #fa0606
+  .navbar
+    &-menu
+      &__link:hover
+        text-decoration: underline
+      &__link:active
+        color: #fa0606
+      &__button:hover
+        color: #FAAD13
+      &__button:active
+        background-color: #ecd6a9
+  .history
+    &-video
+      &__btn
+        &--main:hover
+          background-color: #c4c4c4
+        &--main:active
+          background-color: #ecd6a9
+        &--small:hover
+          background-color: #c4c4c4
+        &--small:active
+          background-color: #ecd6a9
+      &__link:hover
+        background-color: #b6a8f5
+      &__link:active
+        background-color: #eb211a
+  .main-book
+    &__button
+      &--buy:hover
+        color: #FAAD13
+      &--buy:active
+        background-color: #ecd6a9
+    &__link
+      &--read:hover
+        color: #FAAD13
+      &--read:active
+        background-color: #ecd6a9
+  .modal
+    &__close:hover
+      background-color: #c4c4c4
+    &__close:active
+      background-color: #eb211a
+  .reference
+    &-buy
+      &__button:hover
+        color: #FAAD13
+      &__button:active
+        background-color: #ecd6a9
+      &__link:visited path
+        fill: #f80808
+      &__link:hover path
+        fill: #b4b0b0
+    &__more:hover
+      color: #FAAD13
+    &__more:active
+      background-color: #ecd6a9
+    &__best:hover
+      color: #FAAD13
+    &__best:active
+      background-color: #ecd6a9
+  .subscribe
+    &__button:hover
+      color: #744b47
+    &__button:active
+      background-color: #ecd6a9
+  .set
+    &__button
+      &--prev:hover
+        background-color: #e7e7e7
+      &--prev:active
+        background-color: #ecd6a9
+      &--next:hover
+        background-color: #e7e7e7
+      &--next:active
+        background-color: #ecd6a9
+  .unreleased
+    &-slider
+      &__button
+        &--prev:hover
+          background-color: #222242
+        &--prev:active
+          background-color: #ecd6a9
+        &--next:hover
+          background-color: #222242
+        &--next:active
+          background-color: #ecd6a9
