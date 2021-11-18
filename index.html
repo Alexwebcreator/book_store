@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-wrapper">
         <a href="index.html" class="logo">
@@ -45,6 +45,25 @@
       <!-- /.navbar-wrapper -->
     </div>
     <!-- /.container -->
+    <div class="navbar-bottom">
+      <div class="container">
+        <ul class="navbar-menu navbar-bottom__mobile">
+          <li class="navbar-menu__item navbar-menu__item--mobile">
+            <a href="#" class="navbar-menu__link navbar-menu__link--mobile">Рекомендации</a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile">
+            <a href="#" class="navbar-menu__link navbar-menu__link--mobile">Книги</a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile">
+            <a href="#" class="navbar-menu__link navbar-menu__link--mobile">Блог</a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile">
+            <button data-toggle="modal" data-href="#book-modal"
+              class="button navbar-menu__button navbar-menu__button--mobile">Получить</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <section class="main">
     <div class="container">
@@ -86,7 +105,7 @@
               <span class="reference__price reference__price--world">$25.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button reference-buy__button--world">Купить</button>
-                <a href="#" class="reference-buy__link changeable"><img src="img/like.svg" alt="Like" class="reference-buy__heart"></a>
+                <a href="#" id="heart-1" class="changeable reference-buy__link" onclick="return false;"><img src="img/like.svg" alt="Like" class="reference-buy__heart"></a>
               </div>
               <!-- /.reference-buy -->
             </div>
@@ -102,7 +121,7 @@
               <span class="reference__price">$28.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <a data-toggle="like" data-href="#like-color" href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                <a href="#" id="heart-2" class="reference-buy__link changeable" onclick="return false;"><img src="img/like.svg"
                     alt="Like" class="reference-buy__heart"></a>
               </div>
               <!-- /.reference-buy -->
@@ -119,7 +138,7 @@
               <span class="reference__price">$19.50</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <a data-toggle="like" data-href="#like-color" href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                <a href="#" id="heart-3" class="reference-buy__link changeable" onclick="return false;"><img src="img/like.svg"
                     alt="Like" class="reference-buy__heart"></a>
               </div>
               <!-- /.reference-buy -->
@@ -136,7 +155,7 @@
               <span class="reference__price">$20.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <a data-toggle="like" data-href="#like-color" href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                <a href="#" id="heart-4" class="reference-buy__link changeable" onclick="return false;"><img src="img/like.svg"
                     alt="Like" class="reference-buy__heart"></a>
               </div>
               <!-- /.reference-buy -->
@@ -153,7 +172,7 @@
               <span class="reference__price">$23.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <a data-toggle="like" data-href="#like-color" href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                <a href="#" id="heart-5" class="reference-buy__link changeable" onclick="return false;"><img src="img/like.svg"
                     alt="Like" class="reference-buy__heart"></a>
               </div>
               <!-- /.reference-buy -->
@@ -170,7 +189,7 @@
               <span class="reference__price">$23.00</span>
               <div class="reference-buy">
                 <button data-toggle="modal" data-href="#book-modal" class="reference-buy__button">Купить</button>
-                <a data-toggle="like" data-href="#like-color" href="#" class="reference-buy__link changeable"><img src="img/like.svg"
+                <a href="#" id="heart-6" class="reference-buy__link changeable" onclick="return false;"><img src="img/like.svg"
                     alt="Like" class="reference-buy__heart"></a>
               </div>
               <!-- /.reference-buy -->
@@ -324,10 +343,10 @@
           <!-- /.swiper-slide set-slider__item -->
         </div>
         <!-- /.swiper-wrapper -->
+        <button class="set__button set__button--prev"></button>
+        <button class="set__button set__button--next"></button>
       </div>
       <!-- /.swiper set-slider -->
-      <button class="set__button set__button--prev"></button>
-      <button class="set__button set__button--next"></button>
     </div>
     <!-- /.container -->
   </section>
@@ -337,8 +356,8 @@
       <div class="swiper unreleased-slider">
         <h2 class="unreleased-slider__title">Неизданные книги</h2>
         <div class="unreleased-slider__keys">
-          <button class="unreleased-slider__button unreleased-slider__button--prev"></button>
-          <button class="unreleased-slider__button unreleased-slider__button--next"></button>
+          <button class="unreleased-slider__button unreleased-slider__button--prev"><img src="img/white-prev.svg" alt="" class="unreleased-slider__arrow"></button>
+          <button class="unreleased-slider__button unreleased-slider__button--next"><img src="img/white-next.svg" alt="" class="unreleased-slider__arrow"></button>
         </div>
         <div class="swiper-wrapper unreleased-slider__wrapper">
           <div class="swiper-slide unreleased-slider__item">
@@ -392,7 +411,7 @@
               <a data-fancybox href="https://www.youtube.com/watch?v=_8T3SPb7eso" class="history-video__btn history-video__btn--small video__play"><img src="img/play-white.svg" alt="Img: play-white" class="history-video__play history-video__play--white"></a>
             </div>
             <h3 class="history__subtitle">Emelda Scandroot</h3>
-            <a href="#" class="history-video__link"><img src="img/checkbox.svg" alt="Img: Checkbox" class="history-video__checkbox"></a>
+            <a href="#" class="history-video__link" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox" class="history-video__checkbox"></a>
             <span class="history-video__author">Author of Books Tittle</span>
           </div>
           <div class="history-video__wrapper video">
@@ -403,7 +422,7 @@
                 alt="Img: play-white" class="history-video__play history-video__play--white"></a>
             </div>
             <h3 class="history__subtitle">Mar Rueda</h3>
-            <a href="#" class="history-video__link"><img src="img/checkbox.svg" alt="Img: Checkbox"
+            <a href="#" class="history-video__link" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox"
                 class="history-video__checkbox"></a>
             <span class="history-video__author">Author of Books Tittle</span>
           </div>
@@ -415,7 +434,7 @@
                     alt="Img: play-white" class="history-video__play history-video__play--white"></a>
             </div>
             <h3 class="history__subtitle">Nembo Lukeni</h3>
-            <a href="#" class="history-video__link"><img src="img/checkbox.svg" alt="Img: Checkbox"
+            <a href="#" class="history-video__link" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox"
                 class="history-video__checkbox"></a>
             <span class="history-video__author">Author of Books Tittle</span>
           </div>

@@ -272,8 +272,34 @@
   .logo
     margin-left: -1px
   .navbar
+    &-wrapper
+      margin-top: 0
+      margin-left: 2px
+      height: 70px
     &__hidden
       display: none
+    &-bottom
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 70px
+      padding-top: 0
+      z-index: 99
+      &--visible
+        max-width: inherit
+        display: block
+        overflow-y: auto
+      &__mobile
+        max-width: 100%
+        margin: 0
+    &--fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 99
   .menu
     &-button
       display: flex
@@ -292,35 +318,37 @@
         width: 22px
         height: 2px
         background-color: $text-color
-  .main-book
-    flex-direction: column
-    margin-top: 20px
-    height: 100%
-    &__description
-      flex-basis: 90%
-      align-items: center
-      margin-bottom: 25px
-    &__name
-      margin-bottom: 40px
-      text-align: center
-      margin-top: 10px
-    &__author
-      text-align: center
-    &__text
-      line-height: 30px
-      text-align: center
-    &__keys
-      flex-direction: row
-      justify-content: space-between
-      width: 100%
-    &__link
-      &--read
-        margin-top: 0
-    &__wrapper
-      width: 100%
-    &__img
-      margin-top: 50px
-      margin-bottom: 50px
+  .main
+    margin-top: 70px
+    &-book
+      flex-direction: column
+      margin-top: 20px
+      height: 100%
+      &__description
+        flex-basis: 90%
+        align-items: center
+        margin-bottom: 25px
+      &__name
+        margin-bottom: 40px
+        text-align: center
+        margin-top: 10px
+      &__author
+        text-align: center
+      &__text
+        line-height: 30px
+        text-align: center
+      &__keys
+        flex-direction: row
+        justify-content: space-between
+        width: 100%
+      &__link
+        &--read
+          margin-top: 0
+      &__wrapper
+        width: 100%
+      &__img
+        margin-top: 50px
+        margin-bottom: 50px
   .reference
     &-wrapper
       flex-direction: column
@@ -477,11 +505,6 @@
 @media (max-width: 576px)
   .container
     width: 89%
-  .navbar
-    &-wrapper
-      margin-top: 0
-      margin-left: 2px
-      height: 70px
   .main-book
     margin-bottom: 58px
     &__description
@@ -663,9 +686,9 @@
       background-size: 12px
       top: 90%
       &--prev
-        left: 33%
+        left: 41%
       &--next
-        right: 33%
+        right: 32%
   .unreleased
     padding-bottom: 7px
     &-slider
@@ -893,30 +916,37 @@
   .blog
     &__button:hover
       color: #FAAD13
+      transition: 0.25s ease
     &__button:active
       background-color: #ecd6a9
+      box-shadow: inset 0 0 0 3px #fff
     &-articles
       &__read:hover
         text-decoration: underline
+        transition: 0.25s ease
       &__read:active
         color: #fa0606
   .footer
     &__img:hover
       background-color: #dfdfdf
+      transition: 0.25s ease
     &__img:active
       background-color: #ecd6a9
     &__link:hover
       text-decoration: underline
+      transition: 0.25s ease
     &__link:active
       color: #fa0606
   .navbar
     &-menu
       &__link:hover
         text-decoration: underline
+        transition: 0.25s ease
       &__link:active
         color: #fa0606
       &__button:hover
         color: #FAAD13
+        transition: 0.25s ease
       &__button:active
         background-color: #ecd6a9
   .history
@@ -924,63 +954,74 @@
       &__btn
         &--main:hover
           background-color: #c4c4c4
+          transition: 0.25s ease
         &--main:active
           background-color: #ecd6a9
         &--small:hover
           background-color: #c4c4c4
+          transition: 0.25s ease
         &--small:active
           background-color: #ecd6a9
       &__link:hover
         background-color: #b6a8f5
+        transition: 0.25s ease
       &__link:active
         background-color: #eb211a
   .main-book
     &__button
       &--buy:hover
         color: #FAAD13
+        transition: 0.25s ease
       &--buy:active
         background-color: #ecd6a9
     &__link
       &--read:hover
         color: #FAAD13
+        transition: 0.25s ease
       &--read:active
         background-color: #ecd6a9
   .modal
     &__close:hover
       background-color: #c4c4c4
+      transition: 0.25s ease
     &__close:active
       background-color: #eb211a
   .reference
     &-buy
       &__button:hover
         color: #FAAD13
+        transition: 0.25s ease
       &__button:active
         background-color: #ecd6a9
-      &__link:visited path
-        fill: #f80808
-      &__link:hover path
-        fill: #b4b0b0
+      &__link:hover
+        transition: 0.25s ease
+        background-color: #d8d5d5
     &__more:hover
       color: #FAAD13
+      transition: 0.25s ease
     &__more:active
       background-color: #ecd6a9
     &__best:hover
       color: #FAAD13
+      transition: 0.25s ease
     &__best:active
       background-color: #ecd6a9
   .subscribe
     &__button:hover
       color: #744b47
+      transition: 0.25s ease
     &__button:active
       background-color: #ecd6a9
   .set
     &__button
       &--prev:hover
         background-color: #e7e7e7
+        transition: 0.25s ease
       &--prev:active
         background-color: #ecd6a9
       &--next:hover
         background-color: #e7e7e7
+        transition: 0.25s ease
       &--next:active
         background-color: #ecd6a9
   .unreleased
@@ -988,9 +1029,11 @@
       &__button
         &--prev:hover
           background-color: #222242
+          transition: 0.25s ease
         &--prev:active
           background-color: #ecd6a9
         &--next:hover
           background-color: #222242
+          transition: 0.25s ease
         &--next:active
           background-color: #ecd6a9

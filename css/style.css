@@ -6,6 +6,7 @@ body {
   font-family: 'Open Sans' sans-serif;
   color: #5A7184;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
   font-family: Open Sans;
   color: red;
   margin-bottom: -5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #name-error {
@@ -55,10 +56,6 @@ body {
 
 .video__play {
   cursor: pointer;
-}
-
-.swiper-button-disabled {
-  display: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -400,12 +397,33 @@ template {
   display: none;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+}
+
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   margin-top: 11px;
+}
+
+.navbar-bottom {
+  background-color: #183B56;
+  display: none;
+}
+
+.navbar-bottom__mobile {
+  list-style-type: none;
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
 }
 
 .navbar-menu {
@@ -420,6 +438,10 @@ template {
   list-style-type: none;
 }
 
+.navbar-menu__item--mobile {
+  margin-bottom: 30px;
+}
+
 .navbar-menu__link {
   text-decoration: none;
   font-family: Open Sans;
@@ -429,6 +451,10 @@ template {
   line-height: 22px;
   color: #183B56;
   letter-spacing: 0.1px;
+}
+
+.navbar-menu__link--mobile {
+  color: #fff;
 }
 
 .navbar-menu__button {
@@ -442,6 +468,13 @@ template {
   line-height: 22px;
 }
 
+.navbar-menu__button--mobile {
+  margin-left: 0;
+  margin-top: 15px;
+  color: #FAAD13;
+  border: 2px solid #FAAD13;
+}
+
 .navbar__mobile-button {
   display: none;
 }
@@ -449,6 +482,10 @@ template {
 .logo {
   margin-left: -3px;
   margin-top: 2px;
+}
+
+.main {
+  overflow: hidden;
 }
 
 .main-book {
@@ -555,8 +592,10 @@ template {
 }
 
 .main-book__success {
-  width: 350px;
-  font-size: 24px;
+  width: 100%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 22px;
   line-height: 32px;
   margin-bottom: 50px;
 }
@@ -687,6 +726,14 @@ template {
   cursor: pointer;
 }
 
+.reference-buy__link:hover path {
+  fill: #bdbdbd;
+}
+
+.reference-buy__link--active path {
+  fill: #f80808;
+}
+
 .reference__more {
   width: 100%;
   font-family: Roboto Condensed;
@@ -761,15 +808,18 @@ template {
 
 .set {
   position: relative;
+  overflow: hidden;
 }
 
 .set-slider {
+  position: relative;
   width: 100%;
   height: 400px;
   border-top: 1px solid #ECEEF2;
   margin-top: 80px;
   padding-top: 60px;
   padding-bottom: 100px;
+  overflow: visible;
 }
 
 .set-slider__item {
@@ -831,13 +881,25 @@ template {
 }
 
 .set__button--prev {
-  left: 8.5%;
+  margin-left: -28px;
   background-image: url(../img/arrow-prev.svg);
 }
 
 .set__button--next {
-  right: 8.5%;
+  right: -28px;
   background-image: url(../img/arrow-right.svg);
+}
+
+.set__disabled {
+  display: none;
+}
+
+.swiper-slide {
+  visibility: hidden;
+}
+
+.swiper-slide-active {
+  visibility: visible;
 }
 
 .unreleased {
@@ -888,17 +950,23 @@ template {
   border-radius: 30px;
   margin-top: 58px;
   margin-bottom: 56px;
+  fill: #fff;
+}
+
+.unreleased-slider__button--prev path {
+  fill: #fff;
+}
+
+.unreleased-slider__button--disabled {
+  border: 2px solid #5A7184;
+}
+
+.unreleased-slider__button--disabled path {
+  fill: #5A7184;
 }
 
 .unreleased-slider__button--prev {
-  background-image: url(../img/white-prev.svg);
-  color: #5A7184;
   margin-right: 18px;
-}
-
-.unreleased-slider__button--next {
-  background-image: url(../img/white-next.svg);
-  color: #5A7184;
 }
 
 .history-wrapper {
@@ -1380,6 +1448,10 @@ template {
   line-height: 22px;
 }
 
+.modal {
+  overflow: hidden;
+}
+
 .modal__form {
   display: flex;
   align-items: center;
@@ -1821,8 +1893,39 @@ template {
   .logo {
     margin-left: -1px;
   }
+  .navbar-wrapper {
+    margin-top: 0;
+    margin-left: 2px;
+    height: 70px;
+  }
   .navbar__hidden {
     display: none;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+    padding-top: 0;
+    z-index: 99;
+  }
+  .navbar-bottom--visible {
+    max-width: inherit;
+    display: block;
+    overflow-y: auto;
+  }
+  .navbar-bottom__mobile {
+    max-width: 100%;
+    margin: 0;
+  }
+  .navbar--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
   }
   .menu-button {
     display: flex;
@@ -1842,6 +1945,9 @@ template {
     width: 22px;
     height: 2px;
     background-color: #5A7184;
+  }
+  .main {
+    margin-top: 70px;
   }
   .main-book {
     flex-direction: column;
@@ -2074,11 +2180,6 @@ template {
   .container {
     width: 89%;
   }
-  .navbar-wrapper {
-    margin-top: 0;
-    margin-left: 2px;
-    height: 70px;
-  }
   .main-book {
     margin-bottom: 58px;
   }
@@ -2300,10 +2401,10 @@ template {
     top: 90%;
   }
   .set__button--prev {
-    left: 33%;
+    left: 41%;
   }
   .set__button--next {
-    right: 33%;
+    right: 32%;
   }
   .unreleased {
     padding-bottom: 7px;
@@ -2586,126 +2687,145 @@ template {
 @media (min-width: 992px) {
   .blog__button:hover {
     color: #FAAD13;
+    transition: 0.25s ease;
   }
   .blog__button:active {
     background-color: #ecd6a9;
+    box-shadow: inset 0 0 0 3px #fff;
   }
   .blog-articles__read:hover {
     text-decoration: underline;
+    transition: 0.25s ease;
   }
   .blog-articles__read:active {
     color: #fa0606;
   }
   .footer__img:hover {
     background-color: #dfdfdf;
+    transition: 0.25s ease;
   }
   .footer__img:active {
     background-color: #ecd6a9;
   }
   .footer__link:hover {
     text-decoration: underline;
+    transition: 0.25s ease;
   }
   .footer__link:active {
     color: #fa0606;
   }
   .navbar-menu__link:hover {
     text-decoration: underline;
+    transition: 0.25s ease;
   }
   .navbar-menu__link:active {
     color: #fa0606;
   }
   .navbar-menu__button:hover {
     color: #FAAD13;
+    transition: 0.25s ease;
   }
   .navbar-menu__button:active {
     background-color: #ecd6a9;
   }
   .history-video__btn--main:hover {
     background-color: #c4c4c4;
+    transition: 0.25s ease;
   }
   .history-video__btn--main:active {
     background-color: #ecd6a9;
   }
   .history-video__btn--small:hover {
     background-color: #c4c4c4;
+    transition: 0.25s ease;
   }
   .history-video__btn--small:active {
     background-color: #ecd6a9;
   }
   .history-video__link:hover {
     background-color: #b6a8f5;
+    transition: 0.25s ease;
   }
   .history-video__link:active {
     background-color: #eb211a;
   }
   .main-book__button--buy:hover {
     color: #FAAD13;
+    transition: 0.25s ease;
   }
   .main-book__button--buy:active {
     background-color: #ecd6a9;
   }
   .main-book__link--read:hover {
     color: #FAAD13;
+    transition: 0.25s ease;
   }
   .main-book__link--read:active {
     background-color: #ecd6a9;
   }
   .modal__close:hover {
     background-color: #c4c4c4;
+    transition: 0.25s ease;
   }
   .modal__close:active {
     background-color: #eb211a;
   }
   .reference-buy__button:hover {
     color: #FAAD13;
+    transition: 0.25s ease;
   }
   .reference-buy__button:active {
     background-color: #ecd6a9;
   }
-  .reference-buy__link:visited path {
-    fill: #f80808;
-  }
-  .reference-buy__link:hover path {
-    fill: #b4b0b0;
+  .reference-buy__link:hover {
+    transition: 0.25s ease;
+    background-color: #d8d5d5;
   }
   .reference__more:hover {
     color: #FAAD13;
+    transition: 0.25s ease;
   }
   .reference__more:active {
     background-color: #ecd6a9;
   }
   .reference__best:hover {
     color: #FAAD13;
+    transition: 0.25s ease;
   }
   .reference__best:active {
     background-color: #ecd6a9;
   }
   .subscribe__button:hover {
     color: #744b47;
+    transition: 0.25s ease;
   }
   .subscribe__button:active {
     background-color: #ecd6a9;
   }
   .set__button--prev:hover {
     background-color: #e7e7e7;
+    transition: 0.25s ease;
   }
   .set__button--prev:active {
     background-color: #ecd6a9;
   }
   .set__button--next:hover {
     background-color: #e7e7e7;
+    transition: 0.25s ease;
   }
   .set__button--next:active {
     background-color: #ecd6a9;
   }
   .unreleased-slider__button--prev:hover {
     background-color: #222242;
+    transition: 0.25s ease;
   }
   .unreleased-slider__button--prev:active {
     background-color: #ecd6a9;
   }
   .unreleased-slider__button--next:hover {
     background-color: #222242;
+    transition: 0.25s ease;
   }
   .unreleased-slider__button--next:active {
     background-color: #ecd6a9;

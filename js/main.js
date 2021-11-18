@@ -9,6 +9,7 @@ $(document).ready(function() {
     navigation: {
       nextEl: '.set__button--next',
       prevEl: '.set__button--prev',
+      disabledClass: 'set__disabled',
     },
 
     keyboard: {
@@ -28,6 +29,7 @@ $(document).ready(function() {
     navigation: {
       nextEl: '.unreleased-slider__button--next',
       prevEl: '.unreleased-slider__button--prev',
+      disabledClass: 'unreleased-slider__button--disabled',
     },
 
     keyboard: {
@@ -35,6 +37,11 @@ $(document).ready(function() {
       onlyInViewport: true,
       pageUpDown: true,
     },
+  });
+
+  var menuButton = $(".menu-button");
+  menuButton.on('click', function () {
+    $(".navbar-bottom").toggleClass('navbar-bottom--visible');
   });
 
   var modalButton = $("[data-toggle=modal]");
@@ -59,15 +66,15 @@ $(document).ready(function() {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Пожалуйста, укажите свое имя",
+          required: "Укажите свое имя",
           minlength: "Имя должно содержать не менее 2 букв",
         },
         email: {
-          required: "Нам нужен ваш email адрес чтобы связаться с вами",
-          email: "Ваш email адрес должен быть в формате name@domain.com"
+          required: "Введите ваш email адрес",
+          email: "Формат email: name@domain.com"
         },
         phone: {
-          required: "Обязательно укажите номер телефона",
+          required: "Укажите номер телефона",
           minlength: "Номер телефона должен содержать не менее 10 символов",
         },
       },
@@ -77,22 +84,68 @@ $(document).ready(function() {
     $(".input--phone").mask("+7-(999)-999-99-99", { placeholder: "+7 (___) ___-__-__"});
   });
 
-  $('.reference-buy__link').on('click', function() {
-    $('img.reference-buy__heart').each(function(){
-      var $img = $(this);
-      var imgClass = $img.attr('class');
-      var imgURL = $img.attr('src');
-        $.get(imgURL, function(data) {
-        var $svg = $(data).find('svg');
-        if(typeof imgClass !== 'undefined') {
-          $svg = $svg.attr('class', imgClass+' replaced-svg');
-        }
-        $svg = $svg.removeAttr('xmlns:a');
-        if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-          $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-        }
-        $img.replaceWith($svg);
-      }, 'xml');
-    });
+  $('img.reference-buy__heart').each(function(){
+    var $img = $(this);
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+      $.get(imgURL, function(data) {
+      var $svg = $(data).find('svg');
+      if(typeof imgClass !== 'undefined') {
+        $svg = $svg.attr('class', imgClass+' replaced-svg');
+      }
+      $svg = $svg.removeAttr('xmlns:a');
+      if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+      }
+      $img.replaceWith($svg);
+    }, 'xml');
   });
+
+  var like = document.getElementById("heart-1");
+  like.addEventListener("click", function() {
+    document.getElementById("heart-1").classList.toggle("reference-buy__link--active");
+  });
+
+  var like = document.getElementById("heart-2");
+  like.addEventListener("click", function() {
+    document.getElementById("heart-2").classList.toggle("reference-buy__link--active");
+  });
+
+  var like = document.getElementById("heart-3");
+  like.addEventListener("click", function() {
+    document.getElementById("heart-3").classList.toggle("reference-buy__link--active");
+  });
+
+  var like = document.getElementById("heart-4");
+  like.addEventListener("click", function() {
+    document.getElementById("heart-4").classList.toggle("reference-buy__link--active");
+  });
+
+  var like = document.getElementById("heart-5");
+  like.addEventListener("click", function() {
+    document.getElementById("heart-5").classList.toggle("reference-buy__link--active");
+  });
+
+  var like = document.getElementById("heart-6");
+  like.addEventListener("click", function() {
+    document.getElementById("heart-6").classList.toggle("reference-buy__link--active");
+  });
+
+  $('img.unreleased-slider__arrow').each(function(){
+    var $img = $(this);
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+      $.get(imgURL, function(data) {
+      var $svg = $(data).find('svg');
+      if(typeof imgClass !== 'undefined') {
+        $svg = $svg.attr('class', imgClass+' replaced-svg');
+      }
+      $svg = $svg.removeAttr('xmlns:a');
+      if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+      }
+      $img.replaceWith($svg);
+    }, 'xml');
+  });
+  
 });
