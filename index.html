@@ -24,13 +24,13 @@
         </a>
         <ul class="navbar-menu navbar__hidden">
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Рекомендации</a>
+            <a href="#reference" class="navbar-menu__link">Рекомендации</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Книги</a>
+            <a href="#unreleased" class="navbar-menu__link">Книги</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Блог</a>
+            <a href="#blog" class="navbar-menu__link">Блог</a>
           </li>
           <li class="navbar-menu__item">
             <button data-toggle="modal" data-href="#book-modal" class="button navbar-menu__button">Получить</button>
@@ -49,13 +49,13 @@
       <div class="container">
         <ul class="navbar-menu navbar-bottom__mobile">
           <li class="navbar-menu__item navbar-menu__item--mobile">
-            <a href="#" class="navbar-menu__link navbar-menu__link--mobile">Рекомендации</a>
+            <a href="#reference" class="navbar-menu__link navbar-menu__link--mobile">Рекомендации</a>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile">
-            <a href="#" class="navbar-menu__link navbar-menu__link--mobile">Книги</a>
+            <a href="#unreleased" class="navbar-menu__link navbar-menu__link--mobile">Книги</a>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile">
-            <a href="#" class="navbar-menu__link navbar-menu__link--mobile">Блог</a>
+            <a href="#blog" class="navbar-menu__link navbar-menu__link--mobile">Блог</a>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile">
             <button data-toggle="modal" data-href="#book-modal"
@@ -91,7 +91,7 @@
       <!-- /.main-book -->
     </div>
   </section>
-  <section class="reference">
+  <section class="reference" id="reference">
     <div class="container">
       <div class="reference-wrapper">
         <div class="reference__book">
@@ -351,7 +351,7 @@
     <!-- /.container -->
   </section>
   <!-- /.set -->
-  <section class="unreleased">
+  <section class="unreleased" id="unreleased">
     <div class="container">
       <div class="swiper unreleased-slider">
         <h2 class="unreleased-slider__title">Неизданные книги</h2>
@@ -411,7 +411,7 @@
               <a data-fancybox href="https://www.youtube.com/watch?v=_8T3SPb7eso" class="history-video__btn history-video__btn--small video__play"><img src="img/play-white.svg" alt="Img: play-white" class="history-video__play history-video__play--white"></a>
             </div>
             <h3 class="history__subtitle">Emelda Scandroot</h3>
-            <a href="#" class="history-video__link" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox" class="history-video__checkbox"></a>
+            <a href="#" class="history-video__link" id="checkbox-1" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox" class="history-video__checkbox"></a>
             <span class="history-video__author">Author of Books Tittle</span>
           </div>
           <div class="history-video__wrapper video">
@@ -422,7 +422,7 @@
                 alt="Img: play-white" class="history-video__play history-video__play--white"></a>
             </div>
             <h3 class="history__subtitle">Mar Rueda</h3>
-            <a href="#" class="history-video__link" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox"
+            <a href="#" class="history-video__link" id="checkbox-2" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox"
                 class="history-video__checkbox"></a>
             <span class="history-video__author">Author of Books Tittle</span>
           </div>
@@ -434,7 +434,7 @@
                     alt="Img: play-white" class="history-video__play history-video__play--white"></a>
             </div>
             <h3 class="history__subtitle">Nembo Lukeni</h3>
-            <a href="#" class="history-video__link" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox"
+            <a href="#" class="history-video__link" id="checkbox-3" onclick="return false;"><img src="img/checkbox.svg" alt="Img: Checkbox"
                 class="history-video__checkbox"></a>
             <span class="history-video__author">Author of Books Tittle</span>
           </div>
@@ -474,7 +474,7 @@
     <!-- /.container -->
   </section>
   <!-- /.publishers -->
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="container">
       <div class="blog-wrapper">
         <h2 class="blog__title">Ehya Блог</h2>
@@ -636,6 +636,9 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+  <a href="#" class="to-top">
+    <img src="img/return.png" alt="">
+  </a>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>

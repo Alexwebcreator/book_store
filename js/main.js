@@ -148,4 +148,36 @@ $(document).ready(function() {
     }, 'xml');
   });
   
+  $('img.history-video__checkbox').each(function(){
+    var $img = $(this);
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+      $.get(imgURL, function(data) {
+      var $svg = $(data).find('svg');
+      if(typeof imgClass !== 'undefined') {
+        $svg = $svg.attr('class', imgClass+' replaced-svg');
+      }
+      $svg = $svg.removeAttr('xmlns:a');
+      if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+      }
+      $img.replaceWith($svg);
+    }, 'xml');
+  });
+
+  var checkbox = document.getElementById("checkbox-1");
+  checkbox.addEventListener("click", function() {
+    document.getElementById("checkbox-1").classList.toggle("history-video__link--active");
+  });
+
+  var checkbox = document.getElementById("checkbox-2");
+  checkbox.addEventListener("click", function() {
+    document.getElementById("checkbox-2").classList.toggle("history-video__link--active");
+  });
+
+  var checkbox = document.getElementById("checkbox-3");
+  checkbox.addEventListener("click", function() {
+    document.getElementById("checkbox-3").classList.toggle("history-video__link--active");
+  });
+
 });

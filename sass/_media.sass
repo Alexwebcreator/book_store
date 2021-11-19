@@ -912,6 +912,16 @@
       margin-left: 2px
     &__networks
       margin-left: 4px
+  .modal
+    &__dialog
+      width: 90%
+      max-width: 300px
+      padding-right: 25px
+      padding-left: 25px
+      max-height: 95%
+      min-height: auto
+    &__title
+      margin-top: 0
 @media (min-width: 992px)
   .blog
     &__button:hover
@@ -962,11 +972,9 @@
           transition: 0.25s ease
         &--small:active
           background-color: #ecd6a9
-      &__link:hover
-        background-color: #b6a8f5
+      &__link:hover path
+        fill: #bdb1b1
         transition: 0.25s ease
-      &__link:active
-        background-color: #eb211a
   .main-book
     &__button
       &--buy:hover
@@ -993,9 +1001,8 @@
         transition: 0.25s ease
       &__button:active
         background-color: #ecd6a9
-      &__link:hover
-        transition: 0.25s ease
-        background-color: #d8d5d5
+      &__link:hover path
+        fill: #dfdbdb
     &__more:hover
       color: #FAAD13
       transition: 0.25s ease

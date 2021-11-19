@@ -58,6 +58,21 @@ body {
   cursor: pointer;
 }
 
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.3);
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  padding: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -726,10 +741,6 @@ template {
   cursor: pointer;
 }
 
-.reference-buy__link:hover path {
-  fill: #bdbdbd;
-}
-
 .reference-buy__link--active path {
   fill: #f80808;
 }
@@ -1062,7 +1073,11 @@ template {
 
 .history-video__link {
   margin-top: 27px;
-  height: 21px;
+  height: 18px;
+}
+
+.history-video__link--active path {
+  fill: #f80808;
 }
 
 .history-video__author {
@@ -2682,6 +2697,17 @@ template {
   .footer__networks {
     margin-left: 4px;
   }
+  .modal__dialog {
+    width: 90%;
+    max-width: 300px;
+    padding-right: 25px;
+    padding-left: 25px;
+    max-height: 95%;
+    min-height: auto;
+  }
+  .modal__title {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2742,12 +2768,9 @@ template {
   .history-video__btn--small:active {
     background-color: #ecd6a9;
   }
-  .history-video__link:hover {
-    background-color: #b6a8f5;
+  .history-video__link:hover path {
+    fill: #bdb1b1;
     transition: 0.25s ease;
-  }
-  .history-video__link:active {
-    background-color: #eb211a;
   }
   .main-book__button--buy:hover {
     color: #FAAD13;
@@ -2777,9 +2800,8 @@ template {
   .reference-buy__button:active {
     background-color: #ecd6a9;
   }
-  .reference-buy__link:hover {
-    transition: 0.25s ease;
-    background-color: #d8d5d5;
+  .reference-buy__link:hover path {
+    fill: #dfdbdb;
   }
   .reference__more:hover {
     color: #FAAD13;
